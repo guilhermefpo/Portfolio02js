@@ -130,9 +130,48 @@ article#apresentacao p {
   border-radius: 10px;
 }
 
-article#formacao h2 {
+article#skills h2 {
   color: var(--destaque);
   padding: 10px;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+article#skills {
+  padding: 60px;
+  text-align: center;
+}
+
+article#skills div.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+article#skills div.card {
+  background-color: var(--fundo-card);
+  color: var(--texto);
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.5s;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+article#skills div.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--texto);
+}
+
+article#skills div.card-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+article#skills div.card h3 {
+  margin-bottom: 10px;
 }
 
 article#projetos h2 {
