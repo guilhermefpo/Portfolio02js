@@ -16,16 +16,15 @@
       <nav id="menu">
         <ul>
           <li>
-            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#ficha"><i class="fa-solid fa-house"></i> Home</a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-brain"></i> Skills</a>
+            <a href="#skills"><i class="fa-solid fa-brain"></i> Skills</a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-graduation-cap"></i> Formação</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-diagram-project"></i> Projetos</a>
+            <a href="#projetos"
+              ><i class="fa-solid fa-diagram-project"></i> Projetos</a
+            >
           </li>
           <li>
             <a href="assets/Curriculo Guilherme.pdf" target="_blank"
@@ -33,16 +32,19 @@
             >
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-moon"></i></a>
+            <button id="toggle-theme">
+              <i class="fa-solid fa-moon"></i>
+            </button>
           </li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section id="ficha">
         <img src="assets/img/foto_guilherme.jpg" alt="Guilherme" class="foto" />
         <h1>Guilherme Fernando</h1>
-        <p>Desenvolvedor de Software Front-End.</p>
+        <p>Desenvolvedor de Software </p>
         <div id="social">
           <a
             href="https://www.linkedin.com/in/guilherme-fernando-portela-de-oliveira"
@@ -63,45 +65,115 @@
           <h2><i class="fa-solid fa-handshake"></i> Deixe-me apresentar!</h2>
           <p>
             Bem vindos! Esse é o meu portfólio, atualmente no segundo ano do
-            curso de Desenvolvimento de Software Multiplataforma, atualmente
-            estou buscando estágio.
+            curso de Desenvolvimento de Software Multiplataforma, estou buscando
+            estágio.
           </p>
         </article>
-        <!-- Fim apresentacao -->
+
         <article id="skills">
           <h2><i class="fa-solid fa-brain"></i> Minhas Skills!</h2>
-
           <div class="cards-container">
             <div class="card">
-              <div class="card-icon">
-                <i class="fa-brands fa-html5"></i>
-              </div>
+              <div class="card-icon"><i class="fa-brands fa-html5"></i></div>
               <h3>HTML</h3>
             </div>
-
             <div class="card">
-              <div class="card-icon">
-                <i class="fa-brands fa-css3-alt"></i>
-              </div>
+              <div class="card-icon"><i class="fa-brands fa-css3-alt"></i></div>
               <h3>CSS</h3>
+            </div>
+            <div class="card">
+              <div class="card-icon"><i class="fa-brands fa-js"></i></div>
+              <h3>JavaScript</h3>
             </div>
 
             <div class="card">
-              <div class="card-icon">
-                <i class="fa-brands fa-js"></i>
-              </div>
-              <h3>JavaScript</h3>
+              <div class="card-icon"><i class="fa-brands fa-react"></i></div>
+              <h3>React.js</h3>
             </div>
           </div>
         </article>
-        <!--fim formacao -->
+
         <article id="projetos">
-          <h2><i class="fa-solid fa-diagram-project"></i> Formação</h2>
+          <h2><i class="fa-solid fa-diagram-project"></i> Projetos</h2>
+          <div id="projeto-container">
+            <div class="projeto">
+              <img src="assets/img/Api.jpeg" alt="Projeto API" class="foto" />
+              <div class="projeto-info">
+                <h3 class="titulo">Projeto API</h3>
+                <details class="descricao">
+                  <summary>Saiba mais...</summary>
+                  <p>HTML, CSS, Python, MySQL e Flask</p>
+                  <a
+                    href="https://github.com/guilhermefpo/CodeWave"
+                    target="_blank"
+                    >Github</a
+                </details>
+              </div>
+            </div>
+
+            <div class="projeto">
+              <img
+                src="assets/img/Audiobook.png"
+                alt="Aplicativo de Audiobook"
+                class="foto"
+              />
+              <div class="projeto-info">
+                <h3 class="titulo">Aplicativo de Audiobook</h3>
+                <details class="descricao">
+                  <summary>Saiba mais...</summary>
+                  <p>
+                    Projetinho para dar os primeiros passos na biblioteca do
+                    JavaScript, o React.js.
+                  </p>
+                   <a
+                    href="https://audiobook-inky-zeta.vercel.app/"
+                    target="_blank"
+                    >Site</a
+                  >
+                  <a
+                    href="https://github.com/guilhermefpo/Audiobook"
+                    target="_blank"
+                    >Github</a
+                </details>
+              </div>
+            </div>
+
+            <div class="projeto">
+              <img
+                src="assets/img/siteuniversidade.jpg"
+                alt="Site Universidade"
+                class="foto"
+              />
+              <div class="projeto-info">
+                <h3 class="titulo">Universidade</h3>
+                <details class="descricao">
+                  <summary>Saiba mais...</summary>
+                  <p>
+                    Meu primeiro projeto em HTML e CSS, desenvolvido nas aulas
+                    de Desenvolvimento Web.
+                  </p>
+                  <a
+                    href="https://site-universidade-two.vercel.app/"
+                    target="_blank"
+                    >Site</a
+                  >
+                  <a
+                    href="https://github.com/guilhermefpo/SiteUniversidade"
+                    target="_blank"
+                    >Github</a
+                  >
+                </details>
+              </div>
+            </div>
+          </div>
         </article>
-        <!--fim projetos -->
       </section>
     </main>
-    <footer></footer>
+
+    <footer>
+      <p>&copy; 2026 Guilherme Fernando Portela de Oliveira</p>
+    </footer>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>
