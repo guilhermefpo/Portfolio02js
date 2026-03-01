@@ -1,3 +1,4 @@
+// DarkMode
 const toggle = document.getElementById("toggle-theme");
 const body = document.body;
 const icon = toggle.querySelector("i");
@@ -11,6 +12,7 @@ toggle.addEventListener("click", () => {
   }
 });
 
+// Função: Bom Dia, Boa Tarde, Boa Noite!
 function carregar() {
   const msg = document.getElementById("msg");
   const hora = new Date().getHours();
@@ -26,3 +28,18 @@ function carregar() {
 
   msg.innerHTML = `<h1>${saudacao}</h1>`;
 }
+
+// Animação Nome
+const text = "Guilherme Fernando";
+const typedEl = document.getElementById("typed");
+
+let i = 0;
+function digitar() {
+  if (i < text.length) {
+    typedEl.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(digitar, 120);
+  }
+}
+
+window.addEventListener("DOMContentLoaded", digitar);
